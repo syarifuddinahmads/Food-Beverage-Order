@@ -5,10 +5,71 @@
     android:layout_height="match_parent"
     tools:context=".AccountFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="account" />
+        android:paddingBottom="95dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:id="@+id/avatar_profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/avatar_accent_account_background"/>
+
+            <TextView
+                android:id="@+id/name_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jhone"
+                android:textSize="20dp"
+                android:layout_below="@id/avatar_profile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/info_profile"
+                android:layout_below="@id/name_account"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="@drawable/card_component_background"
+                android:orientation="vertical"
+                android:layout_marginBottom="18dp"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/history_transaction"
+                android:layout_below="@+id/info_profile"
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:background="@drawable/card_component_background"
+                android:orientation="vertical"
+                android:layout_marginBottom="18dp"></LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/history_transaction"
+                android:background="@drawable/button_danger_accent_background"
+                android:text="Keluar"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginBottom="12dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
 
 </FrameLayout>

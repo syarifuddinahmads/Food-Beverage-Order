@@ -5,10 +5,85 @@
     android:layout_height="match_parent"
     tools:context=".TransactionFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="transaction" />
+        android:paddingBottom="95dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <LinearLayout
+                android:id="@+id/banner_info"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="@drawable/card_component_background"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp">
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/banner_info2"
+                android:layout_below="@id/banner_info"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="@drawable/card_component_background"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp">
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/banner_info3"
+                android:layout_below="@id/banner_info2"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="@drawable/card_component_background"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/banner_info4"
+                android:layout_below="@id/banner_info3"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="@drawable/card_component_background"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/banner_info5"
+                android:layout_below="@id/banner_info4"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="@drawable/card_component_background"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp">
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
 
 </FrameLayout>
