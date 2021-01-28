@@ -30,6 +30,7 @@
                 android:padding="12dp"
                 android:layout_below="@+id/logo"
                 android:hint="Input email"
+                android:inputType="textEmailAddress"
                 android:layout_marginTop="38dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginLeft="24dp"/>
@@ -41,6 +42,7 @@
                 android:layout_height="50dp"
                 android:background="@drawable/input_background"
                 android:padding="12dp"
+                android:inputType="textPassword"
                 android:layout_below="@+id/input_email"
                 android:layout_marginTop="24dp"
                 android:layout_marginRight="24dp"
@@ -61,19 +63,19 @@
                 android:textColor="@android:color/white"
                 android:textSize="16dp"/>
 
-            <Button
-                android:id="@+id/btn_register"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:padding="12dp"
-                android:layout_below="@+id/btn_login"
-                android:background="@drawable/button_primary_accent_background"
-                android:layout_marginTop="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginLeft="24dp"
-                android:text="Daftar"
-                android:textColor="@color/colorPrimary"
-                android:textSize="16dp"/>
+<!--            <Button-->
+<!--                android:id="@+id/btn_register"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:padding="12dp"-->
+<!--                android:layout_below="@+id/btn_login"-->
+<!--                android:background="@drawable/button_primary_accent_background"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                android:layout_marginRight="24dp"-->
+<!--                android:layout_marginLeft="24dp"-->
+<!--                android:text="Daftar"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="16dp"/>-->
 
         </RelativeLayout>
 
