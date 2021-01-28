@@ -1,6 +1,7 @@
 package adapter;
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,11 +14,14 @@ public class TransactionItemHolder extends RecyclerView.ViewHolder {
     private TextView idView;
     private TextView dateView;
     private TextView totalView;
+    private Button btnDetail;
+
     public TransactionItemHolder(@NonNull View itemView) {
         super(itemView);
         idView = itemView.findViewById(R.id.id_transaction);
         dateView = itemView.findViewById(R.id.date_transaction);
         totalView = itemView.findViewById(R.id.total_transaction);
+        btnDetail = itemView.findViewById(R.id.btn_detail);
     }
 
     public TextView getIdView() {
@@ -42,5 +46,13 @@ public class TransactionItemHolder extends RecyclerView.ViewHolder {
 
     public void setTotalView(TextView totalView) {
         this.totalView = totalView;
+    }
+
+    public Button getBtnDetail() {
+        return btnDetail;
+    }
+
+    public void setBtnDetail(Button btnDetail) {
+        this.btnDetail = btnDetail;
     }
 }

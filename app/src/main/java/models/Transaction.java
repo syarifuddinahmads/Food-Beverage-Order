@@ -1,8 +1,9 @@
 package models;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Transaction {
+public class Transaction implements Serializable {
     private String idTransaction;
     private String dateTransaction;
     private Integer grandtotal;
